@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Dynamic Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- AOS Library for animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-down">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about" data-aos="fade-up">About</a></li>
+                <li><a href="#projects" data-aos="fade-up" data-aos-delay="100">Projects</a></li>
+                <li><a href="#contact" data-aos="fade-up" data-aos-delay="200">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+<section id="about" class="about-section" data-aos="fade-up">
+    <div class="about-content" data-aos="flip-left">
+        <div class="about-details">
+            <img src="dp.jpg" alt="Profile Picture" class="profile-image">
+        </div>
+        <h2>Dheeraj Kumar J S</h2>
+        <div class="about-extra">
+            <p>
+                Hey there, I’m currently pursuing a Master’s degree in Computer Science at the University of Florida. 
+                After completing my undergraduate studies in India, I worked as a software engineer for two years, where I gained hands-on experience and developed a strong foundation in tech. 
+                My journey in computer science is driven by a love for problem-solving and a keen interest in discovering innovative technologies.
+                I’m an avid traveler and outdoor enthusiast. I find inspiration in exploring new places, hiking through scenic landscapes, and connecting with different cultures. 
+                I believe these experiences enrich my perspective and fuel my creativity. Sports also play a big role in my life, whether it's playing a game with friends or cheering on my favorite teams—I love the camaraderie and energy that sports bring.
+                One of my goals is to create a personal e-portfolio that reflects my journey, showcasing my technical skills alongside my creative projects. 
+                This e-portfolio is a step in that direction, highlighting various projects from my Master’s coursework in EME 6208 Emerging Learning Technology. 
+                Here, you’ll find examples of my work in image editing, web design, video production, screencasting, and digital animation. I’m excited to share my journey with you as I blend technical expertise with creativity, striving to make an impact in the tech world while staying true to my passions.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+                <h3>Image Editing</h3>
+                <p>Designed a book cover for "Benares: A World Within a World" and a logo for "The Great Indian Silk," a textile company. The book cover was crafted using Adobe Photoshop, while the logo was created in Adobe Illustrator</p>
+                <a href="image.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+                <h3>Web Design</h3>
+                <p>Developed web pages for a pop quiz on The Office and a drag-and-drop quiz featuring famous TV show quotes, utilizing HTML, CSS, and JavaScript</p>
+                <a href="web.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+                <h3>Video Production</h3>
+                <p>Briefly summarize your work on Project 5 in this class, keeping each description about the same length to ensure the boxes appear uniform in size</p>
+                <a href="video.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="400">
+                <h3>Digital Animation</h3>
+                <p>Briefly summarize your work on Project 6 in this class, keeping each description about the same length to ensure the boxes appear uniform in size</p>
+                <a href="animation.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="500">
+                <h3>Screencasting</h3>
+                <p>Briefly summarize your work on Project 7 in this class, keeping each description about the same length to ensure the boxes appear uniform in size</p>
+                <a href="screencast.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="600">
+                <h3>E-Portfolio</h3>
+                <p>Developed an e-portfolio as the final project for the EME6208 course, showcasing all the projects completed throughout the course. This portfolio highlights my web development skills and was built using HTML, CSS, and JavaScript</p>
+                <a href="#contact" class="project-button"><span>Contact Me</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jonnagaddheerajk@ufl.edu">jonnagaddheerajk@ufl.edu</a>
+
+        </div>
+        <!-- LinkedIn -->
+        <div class="contact-item">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/dheerajkumarjs/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <!-- GitHub -->
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/JSdheerajkumar" target="_blank">GitHub Profile</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- AOS Script for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+    <!-- Scroll Detection Script -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const aboutSection = document.querySelector(".about-section");
+            const profileImage = document.querySelector(".profile-image");
+
+            if (window.scrollY > aboutSection.offsetTop + aboutSection.offsetHeight) {
+                aboutSection.classList.add("scrolled");
+            } else {
+                aboutSection.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
