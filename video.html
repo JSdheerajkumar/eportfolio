@@ -22,21 +22,34 @@
     <!-- Content Section -->
     <section class="content-section">
         <h2>Video Production</h2>
-        <div class="coming-soon">
-            <p>Coming Soon<span id="dots">...</span></p>
+        <div class="video-container">
+            <!-- YouTube Video -->
+            <iframe 
+                src="https://www.youtube.com/embed/q6Puq8nv2Rw?si=b8y4kitci5U0ixnq" 
+                title="Tirumala" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <!-- Description -->
+            <p class="video-description">
+                This video explores the timeless beauty and spiritual significance of Tirumala Tirupati, nestled in my hometown in Andhra Pradesh. 
+                High atop the seven hills, the Tirumala temple dedicated to Lord Venkateswara has drawn millions of devotees each year, offering a powerful blend of faith, culture, and history. 
+                I created this video to share the awe-inspiring journey pilgrims undertake, the rich traditions surrounding the temple, and the serene atmosphere of devotion that defines Tirumala.
+                <br>
+                <br>
+                To enhance the spiritual experience, I used the sacred chant of Om Namo Venkateshaya as background music throughout the video. 
+                This powerful mantra fills the air around the temple, creating an atmosphere of reverence and unity, and I wanted to bring that same feeling to viewers, allowing them to feel connected to the divine as they watch.
+                <br>
+                <br>
+                From the famous Tirupati ladoo to the chanting that echoes through the temple, each element in this video captures the essence of this revered site.
+                Tirumala is more than a pilgrimage—it represents a legacy of faith that has touched countless lives, including my own. 
+                Through this video, I hope to share a glimpse of Tirumala’s sacred wonders with those who have yet to experience its beauty.
+
+            </p>
         </div>
     </section>
 
-    <script>
-        // JavaScript for Dots Loading Animation
-        const dots = document.getElementById("dots");
-        let dotCount = 0;
-    
-        setInterval(() => {
-            dotCount = (dotCount + 1) % 4; // Cycle through 0, 1, 2, 3
-            dots.textContent = ".".repeat(dotCount); // Update the dots based on count
-        }, 500); // Adjust speed (500ms per step for smooth loading effect)
-    </script>
 
 </body>
 </html>

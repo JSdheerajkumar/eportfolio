@@ -22,21 +22,30 @@
     <!-- Content Section -->
     <section class="content-section">
         <h2>Digital Animation</h2>
-        <div class="coming-soon">
-            <p>Coming Soon<span id="dots">...</span></p>
+        <div class="video-container">
+            <!-- YouTube Video -->
+            <iframe 
+                src="https://www.youtube.com/embed/OmeWcVdMSgY?si=UfRGq5FUU3t99PVO" 
+                title="Magnetism Animation" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <!-- Description -->
+            <p class="video-description">
+                I created a 15-second animated video using Adobe Animate to demonstrate the principles of magnetism. 
+                The animation illustrates how same poles repel and opposite poles attract, with smooth motion tweens, labeled visuals, and transitions for clarity and engagement. 
+                I refined the magnet designs by adding distinct red and blue colors for the poles and incorporated text overlays, such as "Same Poles Repel" and "Opposite Poles Attract," to reinforce the concepts. 
+                To enhance aesthetics, I used a subtle yellow gradient background and added fade-in/out effects for seamless transitions.
+                <br>
+                <br>
+                While creating this project, I overcame challenges like learning the tool’s features, managing registration points for accurate motion, and simulating 3D effects without access to the 3D Rotation Tool. 
+                Synchronizing animations with text, managing a crowded timeline, and troubleshooting export quality further tested my skills. 
+                These efforts resulted in a polished, informative, and visually engaging video that effectively explains the behavior of magnetic forces.
+            </p>
         </div>
     </section>
-    
-    <script>
-        // JavaScript for Dots Loading Animation
-        const dots = document.getElementById("dots");
-        let dotCount = 0;
-    
-        setInterval(() => {
-            dotCount = (dotCount + 1) % 4; // Cycle through 0, 1, 2, 3
-            dots.textContent = ".".repeat(dotCount); // Update the dots based on count
-        }, 500); // Adjust speed (500ms per step for smooth loading effect)
-    </script>
+
 
 </body>
 </html>
