@@ -455,7 +455,7 @@ html {
     color: #cccccc;
     margin-top: 20px;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
 
@@ -469,4 +469,24 @@ html {
         font-size: 1em;
         line-height: 1.4;
     }
+}
+
+
+.footer {
+    text-align: center; 
+    padding: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    line-height: 1.6; 
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer a {
+    color: #e5e5e5; /* Optional: Sets a consistent link color */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for accessibility */
 }

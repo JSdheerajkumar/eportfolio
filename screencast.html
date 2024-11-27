@@ -6,6 +6,7 @@
     <title>Screencasting</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 <body>
     <!-- Header -->
@@ -20,22 +21,44 @@
     </header>
 
     <!-- Content Section -->
-    <section class="content-section">
-        <h2>ScreenCasting</h2>
-        <div class="coming-soon">
-            <p>Coming Soon<span id="dots">...</span></p>
+    <section class="content-video-section">
+        <h2>Screencasting</h2>
+        <div class="video-container">
+            <!-- YouTube Video -->
+            <iframe 
+                src="https://www.youtube.com/embed/HSEuWcC7VQk?si=3S4CAPdo7D_dhiaG" 
+                title="Excel" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <!-- Description -->
+            <p class="video-description">
+            This project involved creating a detailed video tutorial to guide users in efficiently managing expense spreadsheets using Microsoft Excel. 
+            The goal was to simplify the process of organizing and analyzing financial data for personal or business use. 
+            I began by designing a clear structure for the tutorial, which included setting up columns for Date, Description, Category, Income, and Expense, converting raw data into a structured table, and applying Excel features like sorting, filtering, and conditional formatting.
+            I also demonstrated how to use SUM formulas for calculating totals and how to add data validation to ensure consistency in entries. 
+            To enhance user experience, I explained how to freeze panes for better navigation in large datasets and improve spreadsheet readability with highlighted headers.
+            <br>
+            <br>
+            The video production process included recording the tutorial using Camtasia, where I utilized features like SmartFocus to zoom in on key sections of the spreadsheet, adding annotations, callouts, and transitions to emphasize each step. 
+            These enhancements ensured the tutorial was engaging and easy to follow. 
+            <br>
+            <br>
+            Through this project, I created a comprehensive learning resource for beginners to build a dynamic and user-friendly expense tracker. 
+            I learned how to effectively combine technical knowledge with creative video editing techniques to present information in a way that is both informative and visually appealing. 
+            Additionally, this project improved my ability to explain complex processes clearly and concisely, a valuable skill for creating educational content.
+            </p>
         </div>
     </section>
-    
-    <script>
-        // JavaScript for Dots Loading Animation
-        const dots = document.getElementById("dots");
-        let dotCount = 0;
-    
-        setInterval(() => {
-            dotCount = (dotCount + 1) % 4; // Cycle through 0, 1, 2, 3
-            dots.textContent = ".".repeat(dotCount); // Update the dots based on count
-        }, 500); // Adjust speed (500ms per step for smooth loading effect)
-    </script>
+    <footer class="footer">
+        <p>
+            <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
+               University of Florida’s Educational Technology website
+            </a>
+        </p>
+    </footer>
+
+
 </body>
 </html>
